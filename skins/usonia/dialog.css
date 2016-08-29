@@ -707,23 +707,42 @@ Styles for other dialog element types.
 
 div.cke_dialog_ui_input_select
 {
-	display: table;
+	background: #FFFFFF;
+	display: block;
+	overflow: hidden;
+	border: 1px solid #C4C4C4;
+	border-radius: 2px;
+	height: 34px;
+	line-height: 34px;
+	position: relative;
+}
+div.cke_dialog_ui_input_select:after
+{
+	content: '▼';
+	position: absolute;
+	right: 5px;
+	top: 2px;
+	z-index: 0;
 }
 
 select.cke_dialog_ui_input_select
 {
-	height: 32px;
-	line-height: 32px;
+	height: 34px;
+	line-height: 28px;
 
 	padding: 3px 3px 3px 6px;
 	outline: none;
 
-	background: #FFFFFF;
-	border: 1px solid #C4C4C4;
-	box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.19);
+	background: transparent;
 	border-radius: 2px;
 	color: #4A4A4A;
 	font-size: 14px;
+	-webkit-appearance: none;
+	outline: none;
+	width: 120% !important;
+	padding-right: 20%;
+	z-index: 1;
+	position: relative;
 }
 
 .cke_dialog_ui_input_file
@@ -736,7 +755,11 @@ select.cke_dialog_ui_input_select
 .cke_hc .cke_dialog_ui_labeled_content select:focus,
 .cke_hc .cke_dialog_ui_labeled_content textarea:focus
 {
-	outline: 1px dotted;
+	outline: 0;
+}
+select.cke_dialog_ui_input_select:focus
+{
+	border: 0 !important;
 }
 
 /*
@@ -1021,4 +1044,8 @@ a.cke_specialchar:active
 /* SPECIAL CHAR TABLE */
 table[aria-labelledby="cke_124_specialchar_table_label"] {
 	border-collapse: collapse !important;
+}
+#cke_113_uiElement,
+#cke_114_uiElement {
+	background: rgba(81, 163, 81, 0.2);
 }
