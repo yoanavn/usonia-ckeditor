@@ -59,6 +59,7 @@ Special outer level classes used in this file:
 {
 	/* Avoid the text selection cursor inside menu items. */
 	cursor: default;
+	color: #777;
 }
 
 .cke_menubutton:hover,
@@ -95,9 +96,7 @@ Special outer level classes used in this file:
 /* The menu item icon. */
 .cke_menubutton_icon
 {
-	background-color: #D7D8D7;
-	opacity: 0.70; /* Safari, Opera and Mozilla */
-	filter: alpha(opacity=70); /* IE */
+	background-color: #DEDEDE;
 	padding: 4px;
 }
 

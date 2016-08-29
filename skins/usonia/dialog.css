@@ -51,11 +51,7 @@ Comments in this file will give more details about each of the above blocks.
 .cke_dialog_body
 {
 	z-index: 1;
-	background: #eaeaea;
-	border: 1px solid #b2b2b2;
-	border-bottom-color: #999;
-	border-radius: 3px;
-	box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+	background: #EAEAEA;
 }
 
 /* Due to our reset we have to recover the styles of some elements. */
@@ -67,23 +63,19 @@ Comments in this file will give more details about each of the above blocks.
 /* The dialog title. */
 .cke_dialog_title
 {
-	font-weight: bold;
 	font-size: 13px;
+	text-transform: uppercase;
 	cursor: move;
 	position: relative;
 
-	color: #474747;
-	text-shadow: 0 1px 0 rgba(255,255,255,.75);
+	color: #4A4A4A;
 
-	border-bottom: 1px solid #999;
-	padding: 6px 10px;
+	border-bottom: 1px solid #E1DFDF;
+	padding: 12px 21px;
 
 	border-radius: 2px 2px 0 0;
-	box-shadow: 0 1px 0 #fff inset;
 
-	background: #cfd1cf;
-	background-image: linear-gradient(to bottom, #f5f5f5, #cfd1cf);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#f5f5f5', endColorstr='#cfd1cf');
+	background: #F3F3F3;
 }
 
 .cke_dialog_spinner
@@ -143,19 +135,20 @@ Comments in this file will give more details about each of the above blocks.
    and the footer. */
 .cke_dialog_contents
 {
-	background-color: #fff;
 	overflow: auto;
 	padding: 15px 10px 5px 10px;
-	margin-top: 30px;
-	border-top: 1px solid #bfbfbf;
-	border-radius: 0 0 3px 3px;
+	margin-top: 48px;
+
+	background: #F9F9F9;
+	border-top: 1px solid #C4C4C4;
+	border-radius: 2px;
 }
 
 /* The contents body part, which will hold all elements available in the dialog. */
 .cke_dialog_contents_body
 {
 	overflow: auto;
-	padding: 17px 10px 5px 10px;
+	padding: 17px 20px 5px 20px;
 	margin-top: 22px;
 }
 
@@ -166,12 +159,6 @@ Comments in this file will give more details about each of the above blocks.
 	text-align: right;
 	position: relative;
 	border: none;
-	outline: 1px solid #bfbfbf;
-	box-shadow: 0 1px 0 #fff inset;
-	border-radius: 0 0 2px 2px;
-	background: #cfd1cf;
-	background-image: linear-gradient(to bottom, #ebebeb, #cfd1cf);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ebebeb', endColorstr='#cfd1cf');
 }
 
 .cke_rtl .cke_dialog_footer
@@ -182,12 +169,11 @@ Comments in this file will give more details about each of the above blocks.
 .cke_hc .cke_dialog_footer
 {
 	outline: none;
-	border-top: 1px solid #fff;
 }
 
 .cke_dialog .cke_resizer
 {
-	margin-top: 22px;
+	margin-top: 60px;
 }
 
 .cke_dialog .cke_resizer_rtl
@@ -224,38 +210,36 @@ The .cke_dialog_tab_selected class is appended to the active tab.
 /* The main tabs container. */
 .cke_dialog_tabs
 {
-	height: 24px;
+	height: 43px;
 	display: inline-block;
-	margin: 5px 0 0;
+	margin: 6px 0 0;
 	position: absolute;
 	z-index: 2;
-	left: 10px;
+	left: 20px;
 }
 
 .cke_rtl .cke_dialog_tabs
 {
-	right: 10px;
+	right: 20px;
 }
 
 /* A single tab (an <a> element). */
 a.cke_dialog_tab
 {
 
-	height: 16px;
-	padding: 4px 8px;
+	height: 13px;
+	font-size: 13px;
+	padding: 14px 14px;
 	margin-right: 3px;
 	display: inline-block;
 	cursor: pointer;
-	line-height: 16px;
+	line-height: 13px;
 	outline: none;
-	color: #595959;
-	border: 1px solid #bfbfbf;
+	color: #777777;
+	border: 1px solid #C4C4C4;
 
-	border-radius: 3px 3px 0 0;
-
-	background: #d4d4d4;
-	background-image: linear-gradient(to bottom, #fafafa, #ededed);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#fafafa', endColorstr='#ededed');
+	background: #F9F9F9;
+	border-radius: 2px;
 }
 
 .cke_rtl a.cke_dialog_tab
@@ -269,15 +253,13 @@ a.cke_dialog_tab:hover,
 a.cke_dialog_tab:focus
 {
 	background: #ebebeb;
-	background: linear-gradient(to bottom, #ebebeb 0%,#dfdfdf 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#dfdfdf',GradientType=0 );
 }
 
 a.cke_dialog_tab_selected
 {
-	background: #fff;
-	color: #383838;
-	border-bottom-color: #fff;
+	background: #F9F9F9;
+	color: #777777;
+	border-bottom-color: #F9F9F9;
 	cursor: default;
 	filter: none;
 }
@@ -286,9 +268,7 @@ a.cke_dialog_tab_selected
 a.cke_dialog_tab_selected:hover,
 a.cke_dialog_tab_selected:focus
 {
-	background: #ededed;
-	background: linear-gradient(to bottom, #ededed 0%,#ffffff 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 );
+	background: #F9F9F9;
 }
 
 .cke_hc a.cke_dialog_tab:hover,
@@ -331,7 +311,7 @@ a.cke_dialog_close_button
 	text-align: center;
 	height: 20px;
 	width: 20px;
-	top: 4px;
+	top: 10px;
 	z-index: 5;
 	opacity: 0.8;
 	filter: alpha(opacity = 80);
@@ -365,7 +345,7 @@ a.cke_dialog_close_button
 
 .cke_ltr .cke_dialog_close_button
 {
-	right: 5px;
+	right: 15px;
 }
 
 .cke_rtl .cke_dialog_close_button
@@ -426,6 +406,11 @@ It is possible to have nested V/H-Boxes.
 .cke_dialog_ui_vbox_child
 {
 	padding: 5px 0px;
+	/*background: rgba(81, 163, 81, 0.20);*/
+}
+
+.cke_dialog_ui_vbox_child .cke_dialog .cke_dark_background {
+	background: transparent;
 }
 
 .cke_dialog_ui_hbox
@@ -455,7 +440,7 @@ It is possible to have nested V/H-Boxes.
 .cke_ltr .cke_dialog_footer_buttons .cke_dialog_ui_hbox_first,
 .cke_ltr .cke_dialog_footer_buttons .cke_dialog_ui_hbox_child
 {
-	padding-right: 5px;
+	padding-right: 18px;
 }
 
 .cke_rtl .cke_dialog_footer_buttons .cke_dialog_ui_hbox_first,
@@ -525,19 +510,20 @@ input.cke_dialog_ui_input_text,
 input.cke_dialog_ui_input_password,
 textarea.cke_dialog_ui_input_textarea
 {
-	background-color: #fff;
-	border: 1px solid #c9cccf;
-	border-top-color: #aeb3b9;
-	padding: 4px 6px;
+	padding: 8px 6px;
 	outline: none;
 	width: 100%;
 	*width: 95%;
 
 	box-sizing: border-box;
 
-	border-radius: 3px;
+	background: #FFFFFF;
+	border: 1px solid #C4C4C4;
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.04);
+	border-radius: 2px;
 
-	box-shadow: 0 1px 2px rgba(0,0,0,.15) inset;
+	color: #4A4A4A;
+	font-size: 14px;
 }
 
 input.cke_dialog_ui_input_text:hover,
@@ -586,14 +572,8 @@ a.cke_dialog_ui_button
 	vertical-align: middle;
 	cursor: pointer;
 
-	border: 1px solid #b6b6b6;
-	border-bottom-color: #999;
-	border-radius: 3px;
-	box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
-
-	background: #e4e4e4;
-	background-image: linear-gradient(to bottom, #ffffff, #e4e4e4);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ffffff', endColorstr='#e4e4e4');
+	width: 90px;
+	height: 28px;
 
 }
 
@@ -604,20 +584,14 @@ span.cke_dialog_ui_button
 
 a.cke_dialog_ui_button:hover
 {
-	border-color: #9e9e9e;
-
-	background: #ccc;
-	background-image: linear-gradient(to bottom, #f2f2f2, #ccc);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#f2f2f2', endColorstr='#cccccc');
+	opacity: 0.8;
 }
 
 /* 	:focus/:active styles for dialog buttons: regular and footer. */
 a.cke_dialog_ui_button:focus,
 a.cke_dialog_ui_button:active
 {
-	border-color: #969696;
-	outline: none;
-	box-shadow: 0 0 6px rgba(0,0,0,.4) inset;
+	opacity: 0.8;
 }
 
 .cke_hc a.cke_dialog_ui_button:hover,
@@ -648,9 +622,8 @@ a.cke_dialog_ui_button[style*="width"]
 .cke_dialog_footer_buttons a.cke_dialog_ui_button span
 {
 	color: inherit;
-	font-size: 12px;
-	font-weight: bold;
-	line-height: 18px;
+	font-size: 16px;
+	line-height: 32px;
 	padding: 0 12px;
 }
 
@@ -658,86 +631,65 @@ a.cke_dialog_ui_button[style*="width"]
 a.cke_dialog_ui_button_ok
 {
 	color: #fff;
-	text-shadow: 0 -1px 0 #55830c;
-	border-color: #62a60a #62a60a #4d9200;
-
-	background: #69b10b;
-	background-image: linear-gradient(to bottom, #9ad717, #69b10b);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#9ad717', endColorstr='#69b10b');
+	background: #51A351;
+	border: 2px solid #51A351;
+	border-radius: 2px;
+}
+a.cke_dialog_ui_button_cancel
+{
+	color: #4A4A4A;
+	border: 2px solid #C4C4C4;
+	border-radius: 2px;
 }
 
 a.cke_dialog_ui_button_ok:hover
 {
-	border-color: #5b9909 #5b9909 #478500;
-
-	background: #88be14;
-	background: linear-gradient(to bottom, #88be14 0%,#5d9c0a 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88be14', endColorstr='#5d9c0a',GradientType=0 );
+	opacity: 0.8;
 }
 
 a.cke_dialog_ui_button_ok.cke_disabled {
 	border-color: #7D9F51;
 
 	background: #8DAD62;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B3D271), to(#8DAD62));
-	background-image: -webkit-linear-gradient(top, #B3D271, #8DAD62);
-	background-image: -o-linear-gradient(top, #B3D271, #8DAD62);
-	background-image: linear-gradient(to bottom, #B3D271, #8DAD62);
-	background-image: -moz-linear-gradient(top, #B3D271, #8DAD62);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#B3D271', endColorstr='#8DAD62');
 }
 
 a.cke_dialog_ui_button_ok.cke_disabled span {
 	color: #E0E8D1;
 }
-
-/* Default text shadow used for inner parts of all dialog buttons (both in dialog tabs and dialog footer). */
-a.cke_dialog_ui_button span
-{
-	text-shadow: 0 1px 0 #fff;
-}
-
-/* Text shadow used for inner part of OK dialog button in footer. */
-a.cke_dialog_ui_button_ok span
-{
-	text-shadow: 0 -1px 0 #55830c;
-}
-
 span.cke_dialog_ui_button
 {
 	cursor: pointer;
 }
 
 /* 	:focus/:active styles for dialog footer buttons (ok & cancel) */
-a.cke_dialog_ui_button_ok:focus,
+/*a.cke_dialog_ui_button_ok:focus,
 a.cke_dialog_ui_button_ok:active,
 a.cke_dialog_ui_button_cancel:focus,
 a.cke_dialog_ui_button_cancel:active
 {
-	border-width: 2px;
 	padding: 3px 0;
-}
+}*/
 
-a.cke_dialog_ui_button_ok:focus,
+/*a.cke_dialog_ui_button_ok:focus,
 a.cke_dialog_ui_button_ok:active
 {
 	border-color: #568C0A;
-}
+}*/
 
-a.cke_dialog_ui_button_ok.cke_disabled:focus,
+/*a.cke_dialog_ui_button_ok.cke_disabled:focus,
 a.cke_dialog_ui_button_ok.cke_disabled:active
 {
 	border-color: #6F8C49;
-}
+}*/
 
 /* 	:focus/:active styles for dialog footer buttons (ok & cancel) spans */
-a.cke_dialog_ui_button_ok:focus span,
+/*a.cke_dialog_ui_button_ok:focus span,
 a.cke_dialog_ui_button_ok:active span,
 a.cke_dialog_ui_button_cancel:focus span,
 a.cke_dialog_ui_button_cancel:active span
 {
-	padding: 0 11px;	/* Thick button border must be compensated. */
-}
+	padding: 0 11px;
+}*/
 
 /* A special container that holds the footer buttons. */
 .cke_dialog_footer_buttons
@@ -760,16 +712,18 @@ div.cke_dialog_ui_input_select
 
 select.cke_dialog_ui_input_select
 {
-	height: 25px;
-	line-height: 25px;
+	height: 32px;
+	line-height: 32px;
 
-	background-color: #fff;
-	border: 1px solid #c9cccf;
-	border-top-color: #aeb3b9;
 	padding: 3px 3px 3px 6px;
 	outline: none;
-	border-radius: 3px;
-	box-shadow: 0 1px 2px rgba(0,0,0,.15) inset;
+
+	background: #FFFFFF;
+	border: 1px solid #C4C4C4;
+	box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.19);
+	border-radius: 2px;
+	color: #4A4A4A;
+	font-size: 14px;
 }
 
 .cke_dialog_ui_input_file
@@ -881,12 +835,14 @@ tendency that these will be moved to the plugins code in the future.
 
 .cke_dialog  .ImagePreviewBox
 {
-	border: 2px ridge black;
 	overflow: scroll;
 	height: 200px;
 	width: 300px;
 	padding: 2px;
-	background-color: white;
+	background: #FFFFFF;
+	border: 1px solid #C4C4C4;
+	box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.19);
+	border-radius: 2px;
 }
 
 .cke_dialog .ImagePreviewBox table td
@@ -959,6 +915,9 @@ tendency that these will be moved to the plugins code in the future.
 
 .cke_dialog_body label
 {
+	color: #777;
+	font-size: 13px;
+	line-height: 28px;
 	display: inline;
 	margin-bottom: auto;
 	cursor: default;
@@ -1057,4 +1016,9 @@ a.cke_specialchar:active
 	filter: alpha(opacity = 0);
 	width: 100%;
 	height: 100%;
+}
+
+/* SPECIAL CHAR TABLE */
+table[aria-labelledby="cke_124_specialchar_table_label"] {
+	border-collapse: collapse !important;
 }

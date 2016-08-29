@@ -77,6 +77,8 @@ http://docs.cksource.com/CKEditor_4.x/Skin_SDK/Reset
 .cke_reset_all iframe
 {
 	vertical-align: inherit;	/** For IE */
+	outline: none;
+	border: 0;
 }
 
 .cke_reset_all textarea
